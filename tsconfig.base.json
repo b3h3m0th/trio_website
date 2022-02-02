@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@trio-website/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@trio-website/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@trio-website/components": ["libs/components/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
