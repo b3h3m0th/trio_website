@@ -1,0 +1,71 @@
+{
+  "root": "apps/trio",
+  "sourceRoot": "apps/trio/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/trio",
+        "index": "apps/trio/src/index.html",
+        "baseHref": "/",
+        "main": "apps/trio/src/main.tsx",
+        "polyfills": "apps/trio/src/polyfills.ts",
+        "tsConfig": "apps/trio/tsconfig.app.json",
+        "assets": ["apps/trio/src/favicon.ico", "apps/trio/src/assets"],
+        "styles": ["apps/trio/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/trio/src/environments/environment.ts",
+              "with": "apps/trio/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "trio:build",
+        "hmr": true,
+        "proxyConfig": "apps/trio/proxy.conf.json"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "trio:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/trio/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/trio"],
+      "options": {
+        "jestConfig": "apps/trio/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
