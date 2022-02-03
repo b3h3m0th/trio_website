@@ -34,6 +34,11 @@ export const Flyer = (props: FlyerProps) => {
           />
         </Tilt>
         <h1 className="flyer__content__title__back">TRIO</h1>
+        <div className="flyer__content__info">
+          <h2 className="flyer__content__info__subtitle">
+            Alle Guten Dinge <br /> sind drei
+          </h2>
+        </div>
       </div>
     </div>
   );
