@@ -3,13 +3,22 @@
   background-position: center;
   background-size: contain;
   min-height: 100vh;
-  padding: 4vh 4vw;
+  padding: 4vh 16vw;
 
   &__header {
     height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     &__ahab-logo {
       height: 50%;
+    }
+
+    &__instagram {
+      color: #fff;
+      font-weight: 100;
+      margin-left: 24px;
     }
   }
 

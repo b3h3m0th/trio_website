@@ -1,5 +1,7 @@
 import './flyer.scss';
 import Tilt from 'react-parallax-tilt';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 /* eslint-disable-next-line */
 export interface FlyerProps {}
@@ -13,6 +15,9 @@ export const Flyer = (props: FlyerProps) => {
           className="flyer__header__ahab-logo"
           alt="ahab logo"
         />
+        <span className="flyer__header__instagram">
+          <FontAwesomeIcon icon={faInstagram} /> TRIO_SCHULFEST_2022
+        </span>
       </div>
       <div className="flyer__content">
         <Tilt>
