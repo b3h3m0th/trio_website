@@ -4,6 +4,7 @@
   background-size: contain;
   min-height: 100vh;
   padding: 4vh 24vw;
+  color: #fff;
 
   &__header {
     height: 10vh;
@@ -16,7 +17,6 @@
     }
 
     &__instagram {
-      color: #fff;
       font-weight: 200;
       letter-spacing: 1px;
       margin-left: 24px;
@@ -27,7 +27,6 @@
     padding: 4vw 70px;
 
     &__schools {
-      color: #fff;
       margin-left: 24px;
       font-weight: 200;
       letter-spacing: 1px;
@@ -41,7 +40,6 @@
     &__title {
       &__front,
       &__back {
-        color: #fff;
         font-family: anton;
         font-weight: 600;
         letter-spacing: 5px;
@@ -70,12 +68,68 @@
 
     &__info {
       z-index: 3;
+      position: relative;
 
       &__subtitle {
         text-transform: uppercase;
         font-size: 2em;
         font-weight: 600;
-        color: #fff;
+      }
+
+      &__date {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &__day {
+          font-size: 4em;
+          font-weight: 200;
+        }
+
+        &__data {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          height: 3em;
+          padding-top: 3px;
+          margin-left: 12px;
+
+          &__month,
+          &__location {
+            font-size: 1.3em;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+
+          &__month {
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      &__data {
+        margin: 16px 0;
+        font-size: 1.3em;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: 1px;
+      }
+
+      &__dj {
+        margin: 32px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+          height: 30px;
+          margin: 0 8px;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
       }
     }
   }
