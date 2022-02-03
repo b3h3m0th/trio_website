@@ -20,6 +20,12 @@ export const Flyer = (props: FlyerProps) => {
         </span>
       </div>
       <div className="flyer__content">
+        <div className="flyer__content__schools">
+          <p>HAK Bregenz</p>
+          <p>BG Gallus</p>
+          <p>HLW Marienberg</p>
+        </div>
+        <h1>TRIO</h1>
         <Tilt>
           <img
             src="assets/img/pipe.png"
