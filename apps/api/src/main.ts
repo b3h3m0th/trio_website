@@ -1,12 +1,9 @@
 import * as express from 'express';
-import { Message } from '@trio-website/api-interfaces';
 
 const app = express();
 
-const greeting: Message = { message: 'Welcome to api!' };
-
 app.get('/api', (req, res) => {
-  res.send(greeting);
+  res.send({ message: 'test' });
 });
 
 const port = process.env.port || 3333;

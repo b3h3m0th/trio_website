@@ -1,0 +1,23 @@
+{
+  "root": "libs/flyer",
+  "sourceRoot": "libs/flyer/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/flyer/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/flyer"],
+      "options": {
+        "jestConfig": "libs/flyer/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

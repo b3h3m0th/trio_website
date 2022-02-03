@@ -1,11 +1,5 @@
 .app {
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      height: 50vh;
-    }
-  }
+  min-height: 100vh;
+  background-color: #000;
+  box-sizing: border-box;
 }

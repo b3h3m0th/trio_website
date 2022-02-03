@@ -2,8 +2,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
-    "api-interfaces": "libs/api-interfaces",
-    "components": "libs/components",
+    "flyer": "libs/flyer",
     "trio": "apps/trio",
     "trio-e2e": "apps/trio-e2e"
   }

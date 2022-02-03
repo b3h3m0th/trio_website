@@ -1,0 +1,21 @@
+.flyer {
+  background-image: url('../../../../apps/trio/src/assets/img/bg.jpg');
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+  padding: 4vh 4vw;
+
+  &__header {
+    height: 10vh;
+
+    &__ahab-logo {
+      height: 50%;
+    }
+  }
+
+  &__content {
+    &__pipe {
+      height: 500px;
+    }
+  }
+}
