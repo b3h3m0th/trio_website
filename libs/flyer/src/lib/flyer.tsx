@@ -25,14 +25,15 @@ export const Flyer = (props: FlyerProps) => {
           <p>BG Gallus</p>
           <p>HLW Marienberg</p>
         </div>
-        <h1>TRIO</h1>
-        <Tilt>
+        <h1 className="flyer__content__title__front">TRI</h1>
+        <Tilt className="flyer__content__pipe" trackOnWindow scale={1.1}>
           <img
             src="assets/img/pipe.png"
-            className="flyer__content__pipe"
             alt="pipe"
+            className="flyer__content__pipe__img"
           />
         </Tilt>
+        <h1 className="flyer__content__title__back">TRIO</h1>
       </div>
     </div>
   );

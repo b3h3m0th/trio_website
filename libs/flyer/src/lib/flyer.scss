@@ -17,7 +17,8 @@
 
     &__instagram {
       color: #fff;
-      font-weight: 100;
+      font-weight: 200;
+      letter-spacing: 1px;
       margin-left: 24px;
     }
   }
@@ -28,6 +29,8 @@
     &__schools {
       color: #fff;
       margin-left: 24px;
+      font-weight: 200;
+      letter-spacing: 1px;
 
       p {
         margin: 2px 0;
@@ -35,15 +38,34 @@
       }
     }
 
-    h1 {
-      color: #fff;
-      font-family: anton;
-      font-weight: 400;
-      font-style: normal;
+    &__title {
+      &__front,
+      &__back {
+        color: #fff;
+        font-family: anton;
+        font-weight: 600;
+        letter-spacing: 5px;
+        font-style: italic;
+        font-size: 13em;
+        margin: 0 0 0 -20px;
+        line-height: 1em;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      &__front {
+        z-index: 200;
+        position: absolute;
+      }
     }
 
     &__pipe {
-      height: 500px;
+      position: absolute;
+      z-index: 1;
+
+      &__img {
+        height: 60vh;
+      }
     }
   }
 }
