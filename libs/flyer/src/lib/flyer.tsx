@@ -26,7 +26,12 @@ export const Flyer = (props: FlyerProps) => {
           <p>HLW Marienberg</p>
         </div>
         <h1 className="flyer__content__title__front">TRI</h1>
-        <Tilt className="flyer__content__pipe" trackOnWindow scale={1.1}>
+        <Tilt
+          className="flyer__content__pipe"
+          trackOnWindow
+          scale={1.1}
+          perspective={300}
+        >
           <img
             src="assets/img/pipe.png"
             alt="pipe"
